@@ -1,0 +1,80 @@
+/*** MOBILE FIRST HEADER ***/
+/*** General styles ***/
+header {
+  align-items: center;
+  background: #DDBB4E;
+  padding: 20px 10px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header div {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+
+header img {
+  max-width: 50px;
+}
+
+header a {
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+header a:visited {
+  color: #2E4C57;
+}
+
+header nav {
+  display: none;
+}
+
+#menuIcon {
+  display: inline-flex;
+  color: #2E4C57;
+  font-size: 24px;
+  padding: 10px;
+}
+
+/********************************* MEDIA QUERY *****************************/
+@media (min-width: 640px) {
+  /***** Header *****/
+  header {
+    padding: 20px 10px;
+    margin: 0px;
+    justify-content: space-between;
+  }
+
+  header img {
+    max-width: 100px;
+  }
+
+  header nav {
+    display: inline;
+  }
+
+  #menuIcon {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    color: #2E4C57;
+    padding: 10px;
+  }
+
+  li {
+    margin: 10px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  header div a {
+    font-size: 32px;
+  }
+}/*# sourceMappingURL=main.css.map */
