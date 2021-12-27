@@ -1,9 +1,7 @@
 /*** MOBILE FIRST HEADER ***/
-/*** General styles ***/
 header {
   align-items: center;
   background: #DDBB4E;
-  padding: 20px 10px;
   margin: 0px;
   display: flex;
   justify-content: space-between;
@@ -19,13 +17,9 @@ header img {
   max-width: 50px;
 }
 
-header a {
-  font-weight: 700;
-  text-decoration: none;
+#pageName {
+  font-weight: 500;
   font-size: 24px;
-}
-
-header a:visited {
   color: #2E4C57;
 }
 
@@ -42,10 +36,8 @@ header nav {
 
 /********************************* MEDIA QUERY *****************************/
 @media (min-width: 640px) {
-  /***** Header *****/
   header {
-    padding: 20px 10px;
-    margin: 0px;
+    padding: 10px;
     justify-content: space-between;
   }
 
@@ -61,20 +53,88 @@ header nav {
     display: none;
   }
 
-  nav ul {
+  header ul {
     display: flex;
     list-style: none;
-    color: #2E4C57;
-    padding: 10px;
   }
 
-  li {
-    margin: 10px;
+  header li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 0 5px;
+    height: 32px;
+    width: 120px;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+    background-color: none;
+    border: 1px solid #2E4C57;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  header a {
     text-decoration: none;
-    font-size: 18px;
+    text-align: center;
+    color: #2E4C57;
   }
 
-  header div a {
-    font-size: 32px;
+  header a:visited {
+    color: #2E4C57;
   }
+
+  header li:hover {
+    font-weight: 400;
+    transform: scale(0.9);
+  }
+}
+/*** MOBILE FIRST HEADER ***/
+footer {
+  background-color: #DDBB4E;
+  color: #2E4C57;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+footer a {
+  padding: 10px;
+}
+
+/********************************* MEDIA QUERY *****************************/
+@media (min-width: 640px) {
+  footer {
+    margin: 0;
+    padding: 20px;
+    font-size: 32px;
+    height: 78px;
+    justify-content: right;
+  }
+
+  footer a:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+  }
+}
+* {
+  margin: 0px;
+  font-family: "Roboto";
+}
+
+#title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main span {
+  color: #2E4C57;
+  font-size: 24px;
+}
+
+#logo {
+  width: 180px;
 }/*# sourceMappingURL=main.css.map */

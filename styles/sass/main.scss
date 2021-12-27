@@ -1,4 +1,39 @@
+/*** GENERAL ***/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto';
+}
+
 @import 'utilities/variables';
 @import 'layout/header';
+@import 'layout/footer';
 
+/*** HEADER ***/
+#title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+/*** MAIN SECTION ***/
+
+main span{
+    color: $contrast-color;
+    font-size: 24px;
+}
+
+#logo{
+    width: 180px;
+}
+
+/*** CAROUSEL BOOTSTRAP ***/
+.item img {
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    width: 50%;
+}

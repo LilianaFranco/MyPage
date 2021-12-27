@@ -1,12 +1,10 @@
 
 /*** MOBILE FIRST HEADER ***/
 
-/*** General styles ***/
 
 header{
-    align-items: center;
+    align-content: center;
     background:  #DDBB4E;
-    padding: 20px 10px;
     margin: 0px;
     display: flex;
     justify-content: space-between;
@@ -22,13 +20,9 @@ header img{
     max-width: 50px;
 }
 
-header a{
-    font-weight: 700;
-    text-decoration: none;
+#pageName{
+    font-weight: 500;
     font-size: 24px;
-}
-
-header a:visited {
     color: $contrast-color;
 }
 
@@ -46,41 +40,55 @@ header nav{
 /********************************* MEDIA QUERY *****************************/
 @media (min-width: 640px){
 
-    /***** Header *****/
     header{
-        padding: 20px 10px;
-        margin: 0px;
+        padding: 10px;
         justify-content: space-between;
     }
 
     header img{
         max-width: 100px;
     }
-    
 
     header nav{
-        display: inline;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 0px;
     }
 
     #menuIcon{
         display: none;
     }
 
-    nav ul {
-        display: flex;
+    header ul{
         list-style: none;
-        color: #2E4C57;
-        padding: 10px;
     }
 
-    li {
-        margin: 10px;
+    header li{
+        border-radius: 5px;
+        height: 32px;
+        width: 120px;
+        font-size: 14px;
+        transition: all 0.2s ease-in-out;
+        background-color: none;
+        border: 1px solid $contrast-color;
+        cursor: pointer;
+    }
+
+    header a{
         text-decoration: none;
-        font-size: 18px;
+        text-align: center;
+        color: $contrast-color;
     }
 
-    header div a{
-        font-size: 32px;
+    header a:visited {
+        color: $contrast-color;
+        
+    }
+
+    header li:hover{
+        font-weight: 400;
+        transform: scale(0.9);
     }
 
 }

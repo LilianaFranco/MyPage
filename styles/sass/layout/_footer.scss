@@ -1,0 +1,31 @@
+/*** MOBILE FIRST HEADER ***/
+
+footer{
+    background-color: $main-color;
+    color: $contrast-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+footer a{
+    padding: 10px;
+}
+
+/********************************* MEDIA QUERY *****************************/
+@media (min-width: 640px){
+
+    footer{
+        margin: 0;
+        padding: 20px;
+        font-size: 32px;
+        height: 78px;
+        justify-content: right;
+    }
+
+    footer a:hover{
+        transform: scale(0.9);
+        cursor: pointer;
+    }
+}
