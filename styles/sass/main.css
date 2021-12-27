@@ -1,6 +1,9 @@
+/*** MY PARTIALS ***/
+/*** PAGE COLORS ***/
+/*** Bootstrap Carousel ***/
 /*** MOBILE FIRST HEADER ***/
 header {
-  align-items: center;
+  align-content: center;
   background: #DDBB4E;
   margin: 0px;
   display: flex;
@@ -46,7 +49,10 @@ header nav {
   }
 
   header nav {
-    display: inline;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0px;
   }
 
   #menuIcon {
@@ -55,52 +61,51 @@ header nav {
 
   header ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
+    margin: 0%;
   }
 
   header li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 5px;
-    padding: 0 5px;
     height: 32px;
-    width: 120px;
+    width: 115px;
     font-size: 14px;
     transition: all 0.2s ease-in-out;
     background-color: none;
     border: 1px solid #2E4C57;
-    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+    margin-right: 10px;
   }
 
-  header a {
+  header a, a:visited, a:hover {
     text-decoration: none;
     text-align: center;
-    color: #2E4C57;
-  }
-
-  header a:visited {
     color: #2E4C57;
   }
 
   header li:hover {
     font-weight: 400;
     transform: scale(0.9);
+    color: #2E4C57;
   }
 }
 /*** MOBILE FIRST HEADER ***/
 footer {
   background-color: #DDBB4E;
-  color: #2E4C57;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 24px;
 }
 
-footer a {
+footer a, a:visited {
   padding: 10px;
+  color: #2E4C57;
 }
 
 /********************************* MEDIA QUERY *****************************/
@@ -118,11 +123,14 @@ footer a {
     cursor: pointer;
   }
 }
+/*** GENERAL ***/
 * {
   margin: 0px;
+  padding: 0px;
   font-family: "Roboto";
 }
 
+/*** HEADER ***/
 #title {
   width: 100%;
   display: flex;
@@ -130,6 +138,7 @@ footer a {
   align-items: center;
 }
 
+/*** MAIN SECTION ***/
 main span {
   color: #2E4C57;
   font-size: 24px;
@@ -137,4 +146,14 @@ main span {
 
 #logo {
   width: 180px;
+}
+
+/*** CAROUSEL BOOTSTRAP ***/
+.item img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 50%;
 }/*# sourceMappingURL=main.css.map */

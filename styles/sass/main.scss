@@ -1,14 +1,15 @@
-/*** GENERAL ***/
 
+/*** MY PARTIALS ***/
+@import 'utilities/variables';
+@import 'layout/header';
+@import 'layout/footer';
+
+/*** GENERAL ***/
 *{
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto';
 }
-
-@import 'utilities/variables';
-@import 'layout/header';
-@import 'layout/footer';
 
 /*** HEADER ***/
 #title{

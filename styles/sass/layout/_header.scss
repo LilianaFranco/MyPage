@@ -1,7 +1,6 @@
 
 /*** MOBILE FIRST HEADER ***/
 
-
 header{
     align-content: center;
     background:  #DDBB4E;
@@ -61,34 +60,38 @@ header nav{
     }
 
     header ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         list-style: none;
+        margin: 0%;
     }
 
     header li{
         border-radius: 5px;
         height: 32px;
-        width: 120px;
+        width: 115px;
         font-size: 14px;
         transition: all 0.2s ease-in-out;
         background-color: none;
         border: 1px solid $contrast-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         cursor: pointer;
+        margin-right: 10px;
     }
 
-    header a{
+    header a, a:visited, a:hover{
         text-decoration: none;
         text-align: center;
         color: $contrast-color;
     }
 
-    header a:visited {
-        color: $contrast-color;
-        
-    }
-
     header li:hover{
         font-weight: 400;
         transform: scale(0.9);
+        color: $contrast-color;
     }
 
 }

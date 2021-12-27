@@ -2,15 +2,15 @@
 
 footer{
     background-color: $main-color;
-    color: $contrast-color;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
 }
 
-footer a{
+footer a, a:visited{
     padding: 10px;
+    color: $contrast-color;
 }
 
 /********************************* MEDIA QUERY *****************************/
@@ -28,4 +28,5 @@ footer a{
         transform: scale(0.9);
         cursor: pointer;
     }
+
 }
