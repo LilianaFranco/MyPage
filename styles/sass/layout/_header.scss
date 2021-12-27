@@ -1,8 +1,6 @@
 
-/*** MOBILE FIRST HEADER ***/
-
 header{
-    align-content: center;
+    align-items: center;
     background:  #DDBB4E;
     margin: 0px;
     display: flex;
@@ -11,18 +9,23 @@ header{
 
 header div{
     display: flex;
-    justify-content: stretch;
+    justify-content: space-between;
     align-items: center;
+    white-space: nowrap;
 }
 
 header img{
-    max-width: 50px;
+    max-width: 35px;
+    margin: 10px 5px 10px 10px;
 }
 
 #pageName{
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     color: $contrast-color;
+    margin: 5px;
+    padding: auto;
+    height: auto;
 }
 
 header nav{
@@ -33,7 +36,7 @@ header nav{
     display:inline-flex;
     color: $contrast-color;
     font-size: 24px;
-    padding: 10px;
+    margin: 10px;
 }
 
 /********************************* MEDIA QUERY *****************************/
@@ -45,8 +48,13 @@ header nav{
     }
 
     header img{
-        max-width: 100px;
+        max-width: 60px;
     }
+
+    #pageName{
+        font-size: 24px;
+    }
+
 
     header nav{
         display: flex;

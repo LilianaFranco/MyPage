@@ -1,0 +1,50 @@
+
+/*** MOBILE FIRST CAROUSEL ***/
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    margin: 25px 0px;
+}
+
+main span{
+    color: $contrast-color;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+#logo{
+    width: 100px;
+}
+
+
+
+
+/********************************* MEDIA QUERY *****************************/
+@media (min-width: 640px){
+
+    .cardTitle{
+        margin: 40px 0px;
+    }
+
+    main span{
+        font-size: 32px;
+    }
+    
+    #logo{
+        width: 150px;
+    }
+    
+    .cardBody{
+        max-width: 700px;
+        max-height: auto;
+    }
+}
