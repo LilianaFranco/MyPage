@@ -144,36 +144,88 @@ footer a, a:visited {
   justify-content: center;
   align-items: center;
   white-space: nowrap;
-  margin: 25px 0px;
+  margin: 20px;
 }
 
 main span {
   color: #2E4C57;
-  font-size: 24px;
+  font-size: 18px;
   margin-right: 10px;
 }
 
 #logo {
-  width: 100px;
+  width: 80px;
+}
+
+#myCarousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  max-height: 230px;
+}
+
+#myIndicators {
+  position: absolute;
+  bottom: -50px;
+}
+
+#myIndicators button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #2E4C57;
+}
+
+.carousel-item .active {
+  position: relative;
+}
+
+#contentText {
+  margin: 40px 0px 20px 0px;
+  width: 80%;
+}
+
+#contentText span {
+  color: #2E4C57;
+  font-size: 16px;
+  line-height: 18px;
+  margin: 40px 0px;
 }
 
 /********************************* MEDIA QUERY *****************************/
 @media (min-width: 640px) {
   .cardTitle {
-    margin: 40px 0px;
+    margin: 30px 0px 20px 0px;
   }
 
   main span {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   #logo {
-    width: 150px;
+    width: 130px;
   }
 
   .cardBody {
     max-width: 700px;
     max-height: auto;
+  }
+
+  .carousel-caption h5 {
+    font-size: 32px;
+    color: #2E4C57;
+  }
+
+  #contentText {
+    width: 50%;
+    margin: 60px 0px 30px 0px;
+  }
+
+  #contentText span {
+    font-size: 24px;
+    line-height: 26px;
   }
 }
 /*** GENERAL ***/
@@ -188,4 +240,8 @@ main span {
   flex-direction: column;
   text-align: center;
   justify-content: center;
+}
+
+#card {
+  border: none;
 }/*# sourceMappingURL=main.css.map */
