@@ -157,29 +157,85 @@ main span {
   width: 80px;
 }
 
+.cardBody {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
 #myCarousel {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   position: relative;
-  max-height: 230px;
+}
+
+.carousel-item img {
+  max-width: auto;
+  max-height: 300px;
 }
 
 #myIndicators {
   position: absolute;
-  bottom: -50px;
+  bottom: -55px;
 }
 
 #myIndicators button {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #2E4C57;
+  background-color: #DDBB4E;
 }
 
 .carousel-item .active {
   position: relative;
+}
+
+.fa-chevron-left:before {
+  color: #DDBB4E;
+  font-size: 32px;
+  position: absolute;
+  bottom: 50%;
+  left: -55%;
+}
+
+.fa-chevron-right:before {
+  color: #DDBB4E;
+  font-size: 32px;
+  position: absolute;
+  bottom: 50%;
+  right: -55%;
+}
+
+.carousel-caption {
+  margin: 0px;
+  padding: 0px;
+}
+
+.carousel-caption h5 {
+  font-size: 32px;
+  color: white;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  border-radius: 10px;
+  position: absolute;
+  left: center;
+  bottom: 40%;
+}
+
+.carousel-caption button {
+  border-radius: 5px;
+  background-color: #DDBB4E;
+  border: none;
+  cursor: pointer;
+  padding: 3px;
+  width: 50%;
+  color: #2E4C57;
+  font-size: 14px;
+  font-weight: 600;
+  position: absolute;
+  left: 25%;
 }
 
 #contentText {
@@ -208,14 +264,13 @@ main span {
     width: 130px;
   }
 
-  .cardBody {
-    max-width: 700px;
-    max-height: auto;
+  #myIndicators {
+    position: absolute;
+    bottom: -70px;
   }
 
-  .carousel-caption h5 {
-    font-size: 32px;
-    color: #2E4C57;
+  .carousel-caption .active button {
+    transition: all 0.2s ease-in-out;
   }
 
   #contentText {
@@ -226,6 +281,16 @@ main span {
   #contentText span {
     font-size: 24px;
     line-height: 26px;
+  }
+
+  .fa-chevron-left:before {
+    font-size: 38px;
+    left: -100%;
+  }
+
+  .fa-chevron-right:before {
+    font-size: 38px;
+    right: -100%;
   }
 }
 /*** GENERAL ***/
