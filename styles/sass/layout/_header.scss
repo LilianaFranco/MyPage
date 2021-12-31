@@ -25,6 +25,11 @@ header img{
     margin: 5px;
     padding: auto;
     height: auto;
+    text-decoration: none;
+}
+
+#pageName:visited, #pageName:hover{
+    color: $contrast-color;
 }
 
 header nav{
@@ -52,6 +57,7 @@ header nav{
 
     #pageName{
         font-size: 24px;
+        margin: 30px;
     }
 
 

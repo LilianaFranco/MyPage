@@ -28,6 +28,11 @@ header img {
   margin: 5px;
   padding: auto;
   height: auto;
+  text-decoration: none;
+}
+
+#pageName:visited, #pageName:hover {
+  color: #2E4C57;
 }
 
 header nav {
@@ -54,6 +59,7 @@ header nav {
 
   #pageName {
     font-size: 24px;
+    margin: 30px;
   }
 
   header nav {
