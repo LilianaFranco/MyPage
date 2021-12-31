@@ -1,4 +1,3 @@
-
 header{
     align-items: center;
     background:  #DDBB4E;
@@ -77,28 +76,28 @@ header nav{
 
     header li{
         border-radius: 5px;
-        height: 32px;
-        width: 115px;
         font-size: 14px;
         transition: all 0.2s ease-in-out;
         background-color: none;
         border: 1px solid $contrast-color;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         cursor: pointer;
-        margin-right: 10px;
+        margin-right: 12px;
     }
 
-    header a, a:visited, a:hover{
+    header a, header a:visited, header a:hover{
         text-decoration: none;
         text-align: center;
         color: $contrast-color;
+        height: 32px;
+        width: 115px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     header li:hover{
         font-weight: 400;
-        transform: scale(0.9);
+        transform: scale(1.1);
         color: $contrast-color;
     }
 

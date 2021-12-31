@@ -77,28 +77,28 @@ header nav {
 
   header li {
     border-radius: 5px;
-    height: 32px;
-    width: 115px;
     font-size: 14px;
     transition: all 0.2s ease-in-out;
     background-color: none;
     border: 1px solid #2E4C57;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
-    margin-right: 10px;
+    margin-right: 12px;
   }
 
-  header a, a:visited, a:hover {
+  header a, header a:visited, header a:hover {
     text-decoration: none;
     text-align: center;
     color: #2E4C57;
+    height: 32px;
+    width: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   header li:hover {
     font-weight: 400;
-    transform: scale(0.9);
+    transform: scale(1.1);
     color: #2E4C57;
   }
 }
@@ -188,16 +188,12 @@ main span {
   background-color: #DDBB4E;
 }
 
-.carousel-item .active {
-  position: relative;
-}
-
 .fa-chevron-left:before {
   color: #DDBB4E;
   font-size: 32px;
   position: absolute;
   bottom: 50%;
-  left: -55%;
+  left: -60%;
 }
 
 .fa-chevron-right:before {
@@ -205,37 +201,38 @@ main span {
   font-size: 32px;
   position: absolute;
   bottom: 50%;
-  right: -55%;
+  right: -60%;
 }
 
 .carousel-caption {
-  margin: 0px;
-  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel-caption h5 {
   font-size: 32px;
   color: white;
-  width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
   border-radius: 10px;
-  position: absolute;
-  left: center;
-  bottom: 40%;
 }
 
-.carousel-caption button {
+.carousel-caption a {
   border-radius: 5px;
   background-color: #DDBB4E;
   border: none;
   cursor: pointer;
-  padding: 3px;
-  width: 50%;
+  padding: 5px;
   color: #2E4C57;
   font-size: 14px;
   font-weight: 600;
-  position: absolute;
-  left: 25%;
+  display: block;
+}
+
+.link, .link:visited, .link:hover {
+  color: #2E4C57;
+  text-decoration: none;
 }
 
 #contentText {
@@ -267,10 +264,6 @@ main span {
   #myIndicators {
     position: absolute;
     bottom: -70px;
-  }
-
-  .carousel-caption .active button {
-    transition: all 0.2s ease-in-out;
   }
 
   #contentText {
@@ -309,4 +302,28 @@ main span {
 
 #card {
   border: none;
+}
+
+#main {
+  color: #2E4C57;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  margin: 40px;
+}
+
+.gif {
+  margin-bottom: 30px;
+  max-width: 300px;
+}
+
+@media (min-width: 640px) {
+  .gif {
+    margin-bottom: 30px;
+    max-width: 500px;
+  }
+
+  #main {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=main.css.map */
