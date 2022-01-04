@@ -4,6 +4,7 @@
 @import 'layout/header';
 @import 'layout/footer';
 @import 'components/homeCarousel';
+@import 'components/review';
 
 /*** GENERAL ***/
 *{
@@ -34,6 +35,12 @@
 .gif{
     margin-bottom: 30px;
     max-width: 300px;
+}
+
+.section-separation{
+    width: 80%;
+    margin: auto;
+    background-color: $main-color;
 }
 
 @media (min-width: 640px){

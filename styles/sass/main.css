@@ -110,7 +110,7 @@ header nav {
 }
 /*** MOBILE FIRST FOOTER ***/
 footer {
-  background-color: #DDBB4E;
+  background-color: #eabd43;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,19 +125,24 @@ footer a, a:visited {
 /********************************* MEDIA QUERY *****************************/
 @media (min-width: 640px) {
   footer {
-    margin: 0;
+    margin: 30px 0px 0px 0px;
     padding: 20px;
-    font-size: 32px;
-    height: 78px;
     justify-content: right;
+  }
+
+  footer a {
+    font-size: 42px;
+    margin: 10px;
   }
 
   footer a:hover {
     transform: scale(0.9);
     cursor: pointer;
+    color: #2E4C57;
   }
 }
 /*** MOBILE FIRST CAROUSEL ***/
+/*** Container for the carroulse, the title and the paragrap ***/
 .card {
   display: flex;
   flex-direction: column;
@@ -145,6 +150,7 @@ footer a, a:visited {
   justify-content: center;
 }
 
+/*** Carrousel title ***/
 .cardTitle {
   display: flex;
   justify-content: center;
@@ -163,6 +169,7 @@ main span {
   width: 80px;
 }
 
+/*** Container for the slides ***/
 .cardBody {
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -191,11 +198,12 @@ main span {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #DDBB4E;
+  background-color: #eabd43;
 }
 
+/*** Arrows ***/
 .fa-chevron-left:before {
-  color: #DDBB4E;
+  color: #eabd43;
   font-size: 32px;
   position: absolute;
   bottom: 50%;
@@ -203,7 +211,7 @@ main span {
 }
 
 .fa-chevron-right:before {
-  color: #DDBB4E;
+  color: #eabd43;
   font-size: 32px;
   position: absolute;
   bottom: 50%;
@@ -226,7 +234,7 @@ main span {
 
 .carousel-caption a {
   border-radius: 5px;
-  background-color: #DDBB4E;
+  background-color: #eabd43;
   border: none;
   cursor: pointer;
   padding: 5px;
@@ -241,8 +249,9 @@ main span {
   text-decoration: none;
 }
 
+/**** Carousel paragraph ***/
 #contentText {
-  margin: 40px 0px 20px 0px;
+  margin: 50px 0px 20px 0px;
   width: 80%;
 }
 
@@ -254,6 +263,7 @@ main span {
 }
 
 /********************************* MEDIA QUERY *****************************/
+/*** Desktop ***/
 @media (min-width: 640px) {
   .cardTitle {
     margin: 30px 0px 20px 0px;
@@ -292,6 +302,109 @@ main span {
     right: -100%;
   }
 }
+/*** MOBILE FIRST CAROUSEL ***/
+#review-title {
+  font-size: 34px;
+  color: #eabd43;
+  text-align: center;
+  margin: 5px;
+}
+
+.review-grid {
+  display: grid;
+  margin: 10px 10%;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 20px;
+}
+
+.cell {
+  text-align: center;
+  color: #2E4C57;
+  background-color: rgba(46, 76, 87, 0.05);
+  border-radius: 10px;
+  place-self: center top;
+  text-align: left;
+}
+
+.cell-header {
+  display: flex;
+  margin: 10px;
+  max-height: auto;
+  align-items: center;
+}
+
+.cell img {
+  border-radius: 50%;
+  max-width: 70px;
+  margin: 10px;
+}
+
+.reviewer {
+  font-size: 22px;
+  font-weight: 600;
+  display: block;
+  padding-left: 10px;
+}
+
+.reviewer-position {
+  font-size: 18px;
+  font-weight: 400;
+  display: block;
+  padding-left: 10px;
+}
+
+.cell p {
+  margin: 20px;
+}
+
+#review4, #review5 {
+  display: none;
+}
+
+/********************************* MEDIA QUERY *****************************/
+/*** Desktop ***/
+@media (min-width: 640px) {
+  .review-grid {
+    grid-template-rows: auto;
+    grid-template-columns: 22.5% 25% 25% 22.5%;
+    grid-template-areas: "title title title title" "review1 review1 review2 review3" "review4 review5 review5 review3";
+  }
+
+  #review-title {
+    grid-area: title;
+    font-size: 48px;
+    margin: 20px;
+  }
+
+  #review1 {
+    grid-area: review1;
+  }
+
+  #review2 {
+    grid-area: review2;
+  }
+
+  #review3 {
+    grid-area: review3;
+  }
+  #review3 .cell-header {
+    flex-direction: column;
+  }
+
+  #review4 {
+    display: inline;
+    grid-area: review4;
+  }
+  #review4 .cell-header {
+    flex-direction: column;
+  }
+
+  #review5 {
+    display: inline;
+    grid-area: review5;
+  }
+}
 /*** GENERAL ***/
 * {
   margin: 0px;
@@ -321,6 +434,12 @@ main span {
 .gif {
   margin-bottom: 30px;
   max-width: 300px;
+}
+
+.section-separation {
+  width: 80%;
+  margin: auto;
+  background-color: #eabd43;
 }
 
 @media (min-width: 640px) {

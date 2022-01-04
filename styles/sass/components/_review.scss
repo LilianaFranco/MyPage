@@ -1,0 +1,112 @@
+/*** MOBILE FIRST CAROUSEL ***/
+
+#review-title{
+    font-size: 34px;
+    color: $main-color;
+    text-align: center;
+    margin: 5px;
+}
+
+.review-grid{
+    display: grid;
+    margin: 10px 10%;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.cell{
+    text-align: center;
+    color: $contrast-color;
+    background-color: $background-color-contrast;
+    border-radius: 10px;
+    place-self: center top;
+    text-align: left;
+}
+
+.cell-header{
+    display: flex;
+    margin: 10px;
+    max-height: auto;
+    align-items: center;
+}
+
+.cell img{
+    border-radius: 50%;
+    max-width: 70px;
+    margin: 10px;
+}
+
+.reviewer{
+    font-size: 22px;
+    font-weight: 600;
+    display: block;
+    padding-left: 10px;
+}
+
+.reviewer-position{
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+    padding-left: 10px;
+}
+
+.cell p{
+    margin: 20px;
+}
+
+#review4, #review5{
+    display: none;
+}
+
+
+
+/********************************* MEDIA QUERY *****************************/
+
+/*** Desktop ***/
+
+@media (min-width: 640px){
+
+    .review-grid{
+    grid-template-rows: auto;
+    grid-template-columns:22.5% 25% 25% 22.5%;
+    grid-template-areas: 
+    "title title title title"
+    "review1 review1 review2 review3"
+    "review4 review5 review5 review3";
+    }   
+
+    #review-title{
+        grid-area: title;
+        font-size: 48px;
+        margin: 20px;
+    }
+
+    #review1{
+        grid-area: review1;
+    }
+
+    #review2{
+        grid-area: review2;
+    }
+
+    #review3{
+        grid-area: review3;
+            .cell-header{
+                flex-direction: column;
+            }
+    }
+
+    #review4{
+        display: inline;
+        grid-area: review4;
+            .cell-header{
+                flex-direction: column;
+            }
+    }
+
+    #review5{
+        display: inline;
+        grid-area: review5;
+    }
+
+}

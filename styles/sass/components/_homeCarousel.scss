@@ -1,4 +1,6 @@
 /*** MOBILE FIRST CAROUSEL ***/
+
+/*** Container for the carroulse, the title and the paragrap ***/
 .card{
     display: flex;
     flex-direction: column;
@@ -6,6 +8,7 @@
     justify-content: center;
 }
 
+/*** Carrousel title ***/
 .cardTitle{
     display: flex;
     justify-content: center;
@@ -24,6 +27,7 @@ main span{
     width: 80px;
 }
 
+/*** Container for the slides ***/
 .cardBody{
     height: max-content;
 }
@@ -53,7 +57,7 @@ main span{
     background-color: $main-color;
 }
 
-
+/*** Arrows ***/
 .fa-chevron-left:before {
     color: $main-color;
     font-size: 32px;
@@ -105,8 +109,9 @@ main span{
     text-decoration: none;
 }
 
+/**** Carousel paragraph ***/
 #contentText{
-    margin: 40px 0px 20px 0px;
+    margin: 50px 0px 20px 0px;
     width: 80%;
 }
 
@@ -118,6 +123,8 @@ main span{
 }
 
 /********************************* MEDIA QUERY *****************************/
+
+/*** Desktop ***/
 @media (min-width: 640px){
 
     .cardTitle{
