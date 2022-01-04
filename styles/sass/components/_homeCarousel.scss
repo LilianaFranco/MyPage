@@ -14,17 +14,17 @@
     justify-content: center;
     align-items: center;
     white-space: nowrap;
-    margin: 20px;
+    margin: 25px;
 }
 
 main span{
     color: $contrast-color;
-    font-size: 18px;
+    font-size: 28px;
     margin-right: 10px;
 }
 
 #logo{
-    width: 80px;
+    width: 120px;
 }
 
 /*** Container for the slides ***/
@@ -79,9 +79,10 @@ main span{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
-.carousel-caption h5{
+.carousel-caption h2{
     font-size: 32px;
     color: white;
     background:
@@ -89,18 +90,18 @@ main span{
         rgba(0, 0, 0, 0.1),
         rgba(0, 0, 0, 0.1)
     );
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .carousel-caption a{
-    border-radius: 5px;
+    border-radius: 30px;
     background-color: $main-color;
     border: none;
     cursor: pointer;
-    padding: 5px;
+    padding: 5px 20px;
     color: $contrast-color;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 400;
     display: block;
 }
 
@@ -117,7 +118,7 @@ main span{
 
 #contentText span{
     color: $contrast-color;
-    font-size: 16px;
+    font-size: 26px;
     line-height: 18px;
     margin: 40px 0px;
 }
@@ -132,12 +133,17 @@ main span{
     }
 
     main span{
-        font-size: 28px;
+        font-size: 38px;
     }
     
     #logo{
-        width: 130px;
+        width: 150px;
     }
+
+    .carousel-item img{
+        max-width: auto;
+        max-height: 400px;
+    } 
 
     #myIndicators{
         position: absolute;
@@ -157,11 +163,13 @@ main span{
     .fa-chevron-left:before {
         font-size: 38px;
         left: -100%;
+        bottom: 45%;
     }
     
     .fa-chevron-right:before {
         font-size: 38px;
         right: -100%;
+        bottom: 45%;
     }
 
 }

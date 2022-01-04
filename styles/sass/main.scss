@@ -1,10 +1,10 @@
 
 /*** MY PARTIALS ***/
-@import url('./utilities/_variables.scss');
-@import url('./layout/_header.scss');
-@import url('./layout/_footer.scss');
-@import url('./components/_homeCarousel.scss');
-@import url('./components/_review.scss');
+@import "utilities/_variables";
+@import "layout/_header";
+@import "layout/_footer";
+@import "components/_homeCarousel";
+@import "components/_review";
 
 /*** GENERAL ***/
 *{
@@ -40,7 +40,10 @@
 .section-separation{
     width: 80%;
     margin: auto;
+    padding: 1px;
     background-color: $main-color;
+    opacity: revert;
+
 }
 
 @media (min-width: 640px){
