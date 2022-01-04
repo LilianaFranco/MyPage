@@ -1,10 +1,10 @@
 
 /*** MY PARTIALS ***/
-@import 'utilities/variables';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'components/homeCarousel';
-@import 'components/review';
+@import url('./utilities/_variables.scss');
+@import url('./layout/_header.scss');
+@import url('./layout/_footer.scss');
+@import url('./components/_homeCarousel.scss');
+@import url('./components/_review.scss');
 
 /*** GENERAL ***/
 *{
