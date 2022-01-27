@@ -445,7 +445,7 @@ main span {
 
 .section-separation {
   width: 80%;
-  margin: auto;
+  margin: 40px auto;
   padding: 1px;
   background-color: #eabd43;
   opacity: revert;

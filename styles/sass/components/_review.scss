@@ -67,46 +67,46 @@
 @media (min-width: 640px){
 
     .review-grid{
-    grid-template-rows: auto;
-    grid-template-columns:22.5% 25% 25% 22.5%;
-    grid-template-areas: 
-    "title title title title"
-    "review1 review1 review2 review3"
-    "review4 review5 review5 review3";
-    }   
+        grid-template-rows: auto;
+        grid-template-columns:22.5% 25% 25% 22.5%;
+        grid-template-areas: 
+        "title title title title"
+        "review1 review1 review2 review3"
+        "review4 review5 review5 review3";
+        }   
 
-    #review-title{
-        grid-area: title;
-        font-size: 48px;
-        margin: 20px;
-    }
+        #review-title{
+            grid-area: title;
+            font-size: 48px;
+            margin: 20px;
+        }
 
-    #review1{
-        grid-area: review1;
-    }
+        #review1{
+            grid-area: review1;
+        }
 
-    #review2{
-        grid-area: review2;
-    }
+        #review2{
+            grid-area: review2;
+        }
 
-    #review3{
-        grid-area: review3;
-            .cell-header{
-                flex-direction: column;
-            }
-    }
+        #review3{
+            grid-area: review3;
+                .cell-header{
+                    flex-direction: column;
+                }
+        }
 
-    #review4{
-        display: inline;
-        grid-area: review4;
-            .cell-header{
-                flex-direction: column;
-            }
-    }
+        #review4{
+            display: inline;
+            grid-area: review4;
+                .cell-header{
+                    flex-direction: column;
+                }
+        }
 
-    #review5{
-        display: inline;
-        grid-area: review5;
-    }
+        #review5{
+            display: inline;
+            grid-area: review5;
+        }
 
 }
