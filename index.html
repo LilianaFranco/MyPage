@@ -25,16 +25,26 @@
         <img src="./img/Cycling_monograma_Transp-cropped.svg" alt="Logo">
         <a href="index.html" id="pageName">Liliana Franco</a>
         <nav>
-			<ul>
-                <li><a href="">I am a...</a></li>
-                <li><a href="scrum-master.html">Scrum Master</a></li>
-                <li><a href="dev-wannabe.html">Dev. Wannabe</a></li>
-                <li><a href="learner.html">Learner</a></li>
-                <li><a href="volunteer.html">Volunteer</a></li>
-                <li><a href="nerd.html">Nerd</a></li>
+			<ul id="main-nav-ul">
+                <li class="main-li"><a href="index.html">I am a...</a></li>
+                <li class="main-li"><a href="scrum-master.html">Scrum Master</a></li>
+                <li class="main-li"><a href="dev-wannabe.html">Dev. Wannabe</a></li>
+                <li class="main-li"><a href="learner.html">Learner</a></li>
+                <li class="main-li"><a href="volunteer.html">Volunteer</a></li>
+                <li class="main-li"><a href="nerd.html">Nerd</a></li>
             </ul>
         </nav>
-        <i class="fas fa-bars" id="menuIcon"></i> 
+		<div class="dropdown">
+			<i class="fas fa-bars" class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"></i>
+			<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
+				<li><a class="dropdown-item" href="index.html">I am a...</a></li>
+				<li><a class="dropdown-item" href="scrum-master.html">Scrum Master</a></li>
+				<li><a class="dropdown-item" href="dev-wannabe.html">Dev. Wannabe</a></li>
+				<li><a class="dropdown-item" href="learner.html">Learner</a></li>
+				<li><a class="dropdown-item" href="volunteer.html">Volunteer</a></li>
+				<li><a class="dropdown-item" href="nerd.html">Nerd</a></li>
+			</ul>
+		</div>
     </header>
 
     <main class="card" id="card">

@@ -27,7 +27,7 @@ header nav {
   display: none;
 }
 
-#menuIcon {
+#dropdownMenuLink {
   display: inline-flex;
   color: #2E4C57;
   font-size: 32px;
@@ -69,11 +69,11 @@ header nav {
     margin: 0px;
   }
 
-  #menuIcon {
+  .dropdown {
     display: none;
   }
 
-  header ul {
+  header #main-nav-ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +81,7 @@ header nav {
     margin: 0%;
   }
 
-  header li {
+  header .main-li {
     border-radius: 30px;
     font-size: 14px;
     transition: all 0.2s ease-in-out;
@@ -114,7 +114,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 footer a, a:visited {

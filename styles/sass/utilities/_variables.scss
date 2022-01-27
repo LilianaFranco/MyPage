@@ -36,3 +36,18 @@ $carousel-transition:                transform $carousel-transition-duration eas
 $carousel-dark-indicator-active-bg:  #2E4C57;
 $carousel-dark-caption-color:        #2E4C57;
 $carousel-dark-control-icon-filter:  invert(1) grayscale(100);
+
+/*** Dark Mode for dropdown ***/
+
+$dropdown-dark-color:               $main-color;
+$dropdown-dark-bg:                  $main-color;
+$dropdown-dark-border-color:        $main-color;
+$dropdown-dark-divider-bg:          $dropdown-divider-bg;
+$dropdown-dark-box-shadow:          null;
+$dropdown-dark-link-color:          $dropdown-dark-color;
+$dropdown-dark-link-hover-color:    $white;
+$dropdown-dark-link-hover-bg:       rgba($white, .15);
+$dropdown-dark-link-active-color:   $dropdown-link-active-color;
+$dropdown-dark-link-active-bg:      $dropdown-link-active-bg;
+$dropdown-dark-link-disabled-color: $gray-500;
+$dropdown-dark-header-color:        $gray-500;
